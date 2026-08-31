@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #121212;
+  --color-surface: #1E1E1E;
+  --color-surface-hover: #262626;
+  --color-surface-border: #2A2A2A;
+  --color-muted: #A0A0A0;
+  --color-accent: #D400FF;
+  --color-accent-hover: #B000D4;
+  --color-accent-pressed: #800099;
+
+  --font-heading: 'Syne', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --radius-card: 16px;
+  --radius-badge: 9999px;
+}
+
+:root {
+  --bg: #121212;
+  --surface: #1E1E1E;
+  --text: #FFFFFF;
+  --muted: #A0A0A0;
+  --accent: #D400FF;
+  --accent-hover: #B000D4;
+  --accent-pressed: #800099;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+/* Accessible custom focus ring in accent colour */
+*:focus-visible {
+  outline: 2px solid #D400FF;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D400FF;
+}

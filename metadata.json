@@ -1,0 +1,6 @@
+{
+  "name": "Had Nails Camden",
+  "description": "Book Holli's acrylics and refreshes online at Had Nails Camden, London NW1. Fast online booking, custom nail art, and price lists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
